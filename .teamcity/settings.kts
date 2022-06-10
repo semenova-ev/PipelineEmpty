@@ -120,14 +120,7 @@ object TestReport : BuildType({
 
 object AppVcs : GitVcsRoot({
     name = "AppVcs"
-    url = "https://github.com/semenova-ev/Build-Chain-Project"
+    url = "https://github.com/semenova-ev/PipelineEmpty"
     branch = "master"
     checkoutPolicy = GitVcsRoot.AgentCheckoutPolicy.USE_MIRRORS
-})
-
-object HttpsGithubComSemenovaEvPipelineRefsHeadsMaster : GitVcsRoot({
-    name = "https://github.com/semenova-ev/PipelineEmpty#refs/heads/master"
-    url = "https://github.com/semenova-ev/Pipeline"
-    branch = "refs/heads/master"
-    branchSpec = "refs/heads/*"
 })
